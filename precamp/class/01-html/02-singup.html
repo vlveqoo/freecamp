@@ -7,13 +7,20 @@
         .bigB{
             border-radius: 20px;
             border: 1px solid blue;
-            padding: 40px 80px; 
+            padding: 60px 80px; 
             width: 470px;
             height: 818px;
         }
         h2{
             color: #0068ff;
         }
+
+        .ibryuk{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
         .irum {
             color: gray;
             font-size: 5px;
@@ -37,11 +44,15 @@
             border: 1px solid #0068ff;
             color: #0068ff;
         }
+        input[class="tb"]{
+            width: 470px;
+        }
+
 
         input[type="radio"]
         {background-color: gray;
         color: gray;}
-        .dongi
+        #dongi
         {
             display: flex;
             flex-direction: row;
@@ -64,11 +75,13 @@
 <body>
     <div class="bigB">
         <h2>회원가입을 위해<br>정보를 입력해주세요</h2>
-
-        <div class="irum">*이메일<br><input class="tb" type="text" ></div> 
-        <div class="irum">*이름<br><input class="tb" type="text" ></div> 
-        <div class="irum">*비밀번호<br><input class="tb" type="password" ></div> 
-        <div class="irum">*비밀번호 확인<br><input class="tb" type="password" ></div> 
+        <br>
+        <div class="ibryuk">
+            <div class="irum">*이메일<br><input class="tb" type="text"></div> 
+            <div class="irum">*이름<br><input class="tb" type="text"></div> 
+            <div class="irum">*비밀번호<br><input class="tb" type="password"></div> 
+            <div class="irum">*비밀번호 확인<br><input class="tb" type="password" ></div> 
+        </div>
 
         <div class="genderb">
             <div><input type="radio" name="gender">여성</div> &nbsp;
