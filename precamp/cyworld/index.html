@@ -4,6 +4,7 @@
    <title>블베쿠님의 미니홈피 :: 사이좋은사람들, 싸이월드</title>
    <link href="./styles/index.css" rel="stylesheet">
    <script src="https://kit.fontawesome.com/f2bca545a3.js" crossorigin="anonymous"></script>
+   <script src="./index.js"></script>
 </head>
 <body>
    <div class="background">
@@ -49,8 +50,13 @@
                         <div id="sabo">사생활보호설정<i class="fa-solid fa-caret-right"></i></div>
                     </div>
                     <div class="wrapper__right__body"> 
-                        <iframe src="./juke.html"></iframe>
+                        <iframe id="contentFrame" src="./home.html"></iframe>
                     </div>
+                </div>
+                <div class="navigation">
+                    <div class="navigation__item" id="menuhome" onclick="menuhome()">Home</div>
+                    <div class="navigation__item" id="menugame" onclick="menugame()">Game</div>
+                    <div class="navigation__item" id="menujukebox" onclick="menujukebox()">Jukebox</div>
                 </div>
             </div>
         </div>

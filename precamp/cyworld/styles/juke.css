@@ -18,7 +18,7 @@ html, body{
 }
 
 .wrapper__header, .wrapper__body{
-    width: 464px;
+    width: 95%;
     height: 203px;
 }
 
@@ -67,7 +67,7 @@ html, body{
 
    #songtitle{
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 900;
     color: #0F465E;
 
    }
@@ -76,3 +76,54 @@ html, body{
     font-size: 10px;
     font-weight: 700;
    }
+
+   .albumtable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+   }
+
+   table, th{
+    border-top: 1px solid gray;
+
+    border-spacing: 0px;
+    width: 464px;
+    height: 20px;
+    padding: 0px 0px;
+    text-align: left;
+    font-size: 10px;
+
+   }
+
+   th{
+    background-color: lightgray;
+    text-align: center;
+   }
+
+   .albumtable td{
+    border-bottom: 1px dashed gray;
+    height: 20px;
+    padding: 1px 5px;
+   }
+
+   .hcheckbox , .dchckbox{
+    width: 5%;
+    text-align: center;
+   }
+   .dnumber{
+    width: 10%;
+    text-align: center;
+   }
+
+   .dsong{
+    width: 45%;
+    text-align: left;
+   }
+
+   .dartist{
+    width: 30%;
+    text-align: center;
+   }
+
+   

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <link href="./final.css" rel="stylesheet">
+    <script src="./final.js"></script>
+</head>
+<body>
+
+    <div class="info">
+        <div id="titlepa">회원가입</div>
+        <div class="in4">
+            <div><input type="email" placeholder="이메일을 입력해주세요"></div>
+            <div><input type="text" placeholder="이름을 입력해주세요"></div>
+            <div><input type="password" placeholder="비밀번호를 입력해주세요"></div>
+            <div><input type="password" placeholder="비밀번호를 다시 입력해주세요"></div>
+        </div>
+        <div class = phonenum>
+            <input type="text" id="p1" oninput="changeFocus1()" maxlength="3"> -
+            <input type="text" id="p2" oninput="changeFocus2()" maxlength="4"> -
+            <input type="text" id="p3" maxlength="4">
+        </div>
+        <div class ="rightjeong">
+            <div id="auth">000000</div>
+            <button onclick="auth()">인증번호 전송</button>
+        </div>
+        <div class ="rightjeong">
+            <div id="timer">3:00</div>
+            <button id = "finish">인증완료</button>
+        </div>
+        <div class="region">
+            <select>
+                <option disabled="true" selected="true">지역을 선택하세요</option>
+                <option>서울</option>
+                <option>경기</option>
+                <option>인천</option>
+            </select>
+        </div>
+        <div class="genderb">
+            <div><input type="radio" name="gender">여성</div> &nbsp; &nbsp; &nbsp;
+            <div><input type="radio" name="gender">남성</div>  
+        </div>
+        <div class="divideline"></div>
+        <button class = "siup">가입하기</button>
+    </div>
+
+</body>
+</html>
