@@ -1,0 +1,135 @@
+body{
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+.header{
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+}
+
+.header-inner{
+    width: 900px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+
+    width: 100px;
+}
+
+.logo h1 a{
+    text-decoration: none;
+    color: #79e5cb;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.menu{
+
+    width: calc(100% - 200px);
+    text-align: center;
+}
+
+.menu__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.menu__ul li{
+    font-size: 22px;
+
+}
+
+.menu__ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+.menu__ul li a:hover{
+    font-weight: 900;
+}
+
+.user{
+
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.wrapper{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: whitesmoke;
+}
+
+.wrapper__head__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #79e5cb;
+    color: white;
+    text-align: center;
+    text-shadow: -1px 0px black;
+    height: 50px;
+}
+
+.wrapper__head__sub-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#point{
+    display: block;
+    color: cornflowerblue;
+    text-decoration: underline;
+    font-size: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed gray;
+
+}
+
+.diary__title{
+    background: linear-gradient(45deg, #a6e9d9, #dff8f3); 
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.wrapper__body__content{
+    border: 1px solid gray;
+    padding: 10px 30px;
+    box-shadow: 1px 2px 2px 0px gray;
+    margin: 30px 0px;
+}
+
+.diary__contents{
+    font-size: 20px;
+}
+
+#weathertoday{
+    text-align: right;
+    color: gray;
+    font-style: italic;
+}
