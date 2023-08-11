@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    background-color: lightblue;
+    background-image: url(./white-cloud-blue-sky.jpg);
+    
+}
+
+.dcounterbox{
+    margin: 100px auto;
+    padding: 0px 30px;
+    width: 600px;
+ 
+    border: 4px dashed royalblue;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.titleOfPage{
+    padding-bottom: 10px;
+
+}
+
+h1{
+    color:royalblue;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px black;
+    border-bottom: 4px dashed royalblue;
+    padding-bottom: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.d-day-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    font-size: 40px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(138, 30, 238), -2px -2px 2px rgb(138, 30, 238), -2px 2px 2px rgb(138, 30, 238), 2px -2px 2px rgb(138, 30, 238);
+}
+
+#onement{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+    height: 25px;
+    margin-top: 40px;
+}
+
+.ymd{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 200;
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+.ymd input{
+    width: 100px;
+    height: 25px;
+    border-radius: 8px;
+    border: 4px solid cornflowerblue;
+    font-size: 19px;
+    text-align: center;
+}
+
+div button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid white;
+    background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    width: 200px;
+    height: 50px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+}
+
+div button:hover{
+    color:rgb(138, 30, 238);
+    border: 0px solid blueviolet;
+    transform: scale(1.1);
+
+}
