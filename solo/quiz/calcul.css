@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+.calcul{
+    width: 450px;
+    height: 470px;
+    padding: 20px;
+    background-color: aqua;
+}
+
+button{
+    width: 80px;
+    height: 50px;
+    font-size: 1.8rem;
+    margin: 5px;
+    background-color: royalblue;
+    color: white;
+}
+
+button:hover{
+    background-color: rgba(65, 105, 225, 0.712);
+    font-weight: 700;
+}
+
+button:active{
+   margin-left: 4px;
+   margin-top: 4px;
+   box-shadow: none;
+}
+
+.calIng{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.8rem;
+    padding-right: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: lightgray;
+    margin-bottom: 15px;
+}
+
+.resultCam{
+    width: 400px;
+    height: 50px;
+    background-color: azure;
+    margin-bottom: 15px;
+}
+
+#resultNum{
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.numPart{
+    width: 300px;
+}
+
+.numLine{
+
+}
+
+.calBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.operationPart{
+    display: flex;
+    flex-direction: column;
+}

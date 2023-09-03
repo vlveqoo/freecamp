@@ -1,0 +1,25 @@
+*{
+    margin: 0 auto;
+}
+
+.container{
+    padding: 100px;
+    text-align: center;
+}
+p{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#hexcolor{
+    text-shadow: -1px 0px black, 0px 1px white, 1px 0px black, 0px -1px white;
+}
+
+button{
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: aliceblue;
+    font-weight: 700;
+    border-radius: 1rem;
+}

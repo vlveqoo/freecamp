@@ -2,16 +2,18 @@
 <html lang="ko">
 <head>
     <title>D-day counter</title>
-    <script src="./dday.js"></script>
+    
     <link href="./dday.css" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;1,700&family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@300&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div class="dcounterbox" >
         <div class="titleOfPage"> <h1>D-day Counter💙</h1> </div>
-        <div class="d-day-container">
+        <div id="d-day-container">
             <div class="d-day-child-container">
                 <span id="days">0</span>
                 <span>일</span>
@@ -29,7 +31,7 @@
                 <span>초</span>
             </div>
         </div>
-        <div id="onement">D-day를 입력해주세요🫡</div>
+        <div id="d-day-message"> </div>
 
         <div class="ymd">
             <input id="targetYearInput" class="targetInputYear" >&nbsp;년 &nbsp; &nbsp;
@@ -37,8 +39,10 @@
             <input id="targetDateInput" class="targetInputDate" >&nbsp;일 &nbsp; &nbsp;
         </div>
 
-        <div><button onclick="counterMaker()">카운트다운 시작!</button></div>
+        <div><button onclick="starter()" id="start-btn">카운트다운 시작!</button></div>
+        <div><button onclick="resetTimer()">타이머 정지</button></div>
         
     </div>
+    <script src="./dday.js"></script>
 </body>
 </html>

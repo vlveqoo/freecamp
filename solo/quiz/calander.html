@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Calander</title>
+    <link href="./calander.css" rel="stylesheet">
+    <script src="./calander.js" defer></script>
+</head>
+<body>
+  <div class = "inputboxes">
+    <br>
+    <input placeholder="2010-01-01 형식으로 입력하세요" id = "dateInput"><button onclick="todayFix()">달력보기</button>
+  </div>
+  <div><h1>📌<span id ="yearid"></span>년  <span id="monthid"></span>월 달력</h1></div>
+  
+    <table id ="calander">
+        <thead>
+          <tr>
+            <th>일</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th>토</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="week1">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr class="week2">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr class="week3">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr class="week4">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr class="week5">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr class="week6">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>

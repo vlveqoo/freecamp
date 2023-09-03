@@ -30,8 +30,7 @@ h1{
     padding-bottom: 10px;
     font-family: 'Do Hyeon', sans-serif;
 }
-
-.d-day-container{
+#d-day-container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -42,7 +41,7 @@ h1{
     text-shadow: 2px 2px 2px rgb(138, 30, 238), -2px -2px 2px rgb(138, 30, 238), -2px 2px 2px rgb(138, 30, 238), 2px -2px 2px rgb(138, 30, 238);
 }
 
-#onement{
+#d-day-message{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -50,7 +49,7 @@ h1{
     font-size: 20px;
     font-weight: 800;
     height: 25px;
-    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .ymd{

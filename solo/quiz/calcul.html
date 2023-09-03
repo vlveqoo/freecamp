@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>계산기</title>
+    <link href="./calcul.css" rel="stylesheet">
+    <script src="./calcul.js" defer></script>
+</head>
+<body>
+    <div class="calcul">
+        <div class="calHead">
+            <section class="calIng"><span id="calculating"></span></section>
+            <section class="resultCam"><span id="resultNum"></span></section>
+        </div>
+        <div class="calBody">
+            <section class="numPart">
+                <div class="numLine">
+                    <span><button id="num7" onclick="input7()">7</button></span>
+                    <span><button id="num8" onclick="input8()">8</button></span>
+                    <span><button id="num9" onclick="input9()">9</button></span>
+                </div>
+                <div class="numLine">
+                    <span><button id="num4" onclick="input4()">4</button></span>
+                    <span><button id="num5" onclick="input5()">5</button></span>
+                    <span><button id="num6" onclick="input6()">6</button></span>
+                </div>
+                <div class="numLine">
+                    <span><button id="num1" onclick="input1()">1</button></span>
+                    <span><button id="num2" onclick="input2()">2</button></span>
+                    <span><button id="num3" onclick="input3()">3</button></span>
+                </div>
+                <div class="numLine">
+                    <span><button id="numClear" onclick="numClear()">C/E</button></span>
+                    <span><button id="num0" onclick="input0()">0</button></span>
+                    <span><button id="numdot" onclick="numdot()">.</button></span>
+                </div>
+            </section>
+            <section class="operationPart">
+                <span><button id="plusB" onclick="plusB()">+</button></span>
+                <span><button id="minusB" onclick="minusB()">-</button></span>
+                <span><button id="multipleB" onclick="multipleB()">×</button></span>
+                <span><button id="divisionB" onclick="divisionB()">÷</button></span>
+                <span><button id="equalB" onclick="equalB()">=</button></span>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
