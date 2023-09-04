@@ -57,6 +57,7 @@ const input0 = function(){
 const numdot = function(){
     calMemory.push(".")
     document.getElementById("resultNum").textContent = Number(calMemory.join(""))
+    
 }
 
 const numClear = function(){
@@ -77,7 +78,7 @@ const plusB = function(){
         console.log(calMemory)
         calMemory = [];
         document.getElementById("resultNum").textContent = "+"
-        document.getElementById("calculating").textContent = longMemory.join("")
+        
 }
 
 const minusB = function(){
