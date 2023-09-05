@@ -1,16 +1,30 @@
+// set inital value to zero
+let count = 0;
+// select value and buttons
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
 
-const hexcolor = document.getElementById("hexcolor")
-
-
-function makeColor() {
-    let colorBase = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let newColor= "#";
-    
-    for(i=0; i<6; i++){
-        let randomValue = colorBase[Math.floor(Math.random() * colorBase.length)];
-        newColor += randomValue;
+btns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const styles = e.currentTarget.classList;
+    if (styles.contains("decrease")) {
+      count--;
+      console.log(styles)
+    } else if (styles.contains("increase")) {
+      count++;
+    } else {
+      count = 0;
     }
-        
-        document.body.style.backgroundColor = newColor;
-        hexcolor.textContent = newColor;
-}
+
+    if (count > 0) {
+      value.style.color = "green";
+    }
+    if (count < 0) {
+      value.style.color = "red";
+    }
+    if (count === 0) {
+      value.style.color = "#222";
+    }
+    value.textContent = count;
+  });
+});
