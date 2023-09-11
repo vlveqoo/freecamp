@@ -1,0 +1,97 @@
+*{
+    margin: 0 Auto;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.banner{
+    width: 500px;
+    height: 400px;
+    background-color: aquamarine;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.modal-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    width: 200px;
+    height: 70px;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+    box-shadow: 2px 2px 2px black;
+}
+
+.modal-btn:hover{
+    background-color: hsl(160, 100%, 99%);
+    
+}
+
+.modal-btn:active{
+    box-shadow: none;
+    margin-top: 115px;
+}
+
+.modal-overlay{
+    position: relative;
+}
+
+.modal-container{
+    width: 450px;
+    height: 300px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    display: flex;
+    padding: 10px;
+    border-radius: 7px;
+    visibility: hidden;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 10px; 
+    width: 95%;
+}
+
+
+
+
+.bonmoon{
+    height: 100%;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    margin-top: 20px; 
+    padding: 10px;
+}
+
+.show-modal{
+    visibility: visible;
+}
+
+.close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.close-btn:hover{
+    color: red;
+}
