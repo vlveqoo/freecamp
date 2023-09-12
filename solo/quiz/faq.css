@@ -1,0 +1,95 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Hahmlet', serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: inline-block;
+    margin: 1rem;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    
+
+}
+
+.qBox{
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 50vw;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:aquamarine;
+    min-width: 450px;
+}
+
+
+
+.qTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.qTContent{
+    /* margin-right: 20px; */
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
+/* hr{
+    width: 40vw;
+    color: white;
+    border: 1px solid gray;
+} */
+
+.qAnswer{
+    width: 100%;
+    /* border-top: 1px solid gray; */
+    border-width: 100%;
+    border-radius: 0.5rem;
+    padding: 10px;
+    display: none;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.show-text .qAnswer{
+    display: inline-block;
+}
+
+button{
+    font-size: 1.3rem;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    border: none;
+    background-color:aquamarine;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-minus .plus-icon{
+    display: none;
+}
+
+.show-minus .minus-icon{
+    display: block;
+}
