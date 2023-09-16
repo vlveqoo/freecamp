@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-family: 'Gowun Batang', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    box-shadow: 4px 4px 0 0 #333;
+    margin: 4px 0 0 4px;
+    font-size: 20px;
+    font-family: 'Gowun Batang', serif;
+    font-weight: 700;
+    background-color: royalblue;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(45, 71, 151);
+}
+
+button:active{
+    box-shadow: none;
+    margin: 8px 0 0 8px;
+}
+
+.section-center{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.photo{
+    width: 250px;
+    height: 180px;
+    border-radius: 1rem;
+    border: 3px solid royalblue
+}
+
+.menu-item header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    width: 270px;
+    border-bottom: 1px solid black;
+}
+
+.establish{
+    color: brown;
+}
+
+.item-text{
+    text-align: center;
+    font-size: 14px;
+    max-width: 250px;
+}
