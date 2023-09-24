@@ -474,7 +474,8 @@ filterBtns.forEach(function(btn) {
     //    console.log(e.currentTarget.dataset.id);
        const category = e.currentTarget.dataset.id;
        const menuCategory = menu.filter(function (menuItem) {
-        // console.log(menuItem.category);
+        // console.log(menuItem.emh); 초등24 중16 고등11
+        console.log(menuItem);
         if(menuItem.category === category) {
             return menuItem;
         }
@@ -489,7 +490,7 @@ filterBtns.forEach(function(btn) {
 
 function displayMenuItems(menuItems){
     let displayMenu = menuItems.map(function(item){
-        // console.log(item);
+        // console.log(item); 메뉴배열 아이템들 나열0
         return `<article class="menu-item">
                     <img src=${item.img} class="photo" alt=${item.title}>
                     <div class="item-info">

@@ -9,23 +9,23 @@ container.style.display = 'none';
 
 
 
-const dateFormMaker = function () {
+const dateFormMaker = function () { // 인풋된 year-month-date 입력값value 받는 함수~ dateFormat값 반환
     const inputYear = document.querySelector('#targetYearInput').value;
     const inputMonth = document.querySelector('#targetMonthInput').value;
     const inputDate = document.querySelector('#targetDateInput').value;
 
     const dateFormat = `${inputYear}-${inputMonth}-${inputDate}`;
 
-    return dateFormat;
+    return dateFormat; 
 };
 
 const counterMaker = function (data) {
+    
     if (data !== savedDate) {
-        localStorage.setItem('saved-date', data);
+        localStorage.setItem('saved-date', data); // 새로운 데이터(매개변수)가 기존localStorage 저장값과 다르다면 새로운값 입력
     }
-   
-    const nowDate = new Date();
-    const targetDate = new Date(data).setHours(0, 0, 0, 0);
+    const nowDate = new Date(); //현재날짜-시간 생성
+    const targetDate = new Date(data).setHours(0, 0, 0, 0); //설정된 날짜의 0시 0분값 
     const remaining = (targetDate - nowDate) / 1000;
   
     if(remaining === 0 || remaining < 0){
@@ -52,7 +52,7 @@ const counterMaker = function (data) {
     };
 
     const documentArr = ['days', 'hours', 'min', 'sec'];
-    const timeKeys = Object.keys(remainingObj);
+    const timeKeys = Object.keys(remainingObj); // remainingObj의 키값
 
 
     const format = function (time) {
@@ -65,14 +65,14 @@ const counterMaker = function (data) {
 
     let i = 0;
     for (let tag of documentArr) {
-        const remainingHours = format(remainingObj[timeKeys[i]]);
+        const remainingHours = format(remainingObj[timeKeys[i]]); // remainingObj['remainingDate'] = remainingObj[timeKeys[0]]
         document.getElementById(tag).textContent = remainingHours;
         i++;
     }
 };
 
 const starter = function (targetDateInput) {
-    if (!targetDateInput) {
+    if (!targetDateInput) { //매개변수가 falsy한값이 아니라면 input데이터값 받아오기
         targetDateInput = dateFormMaker();
     }
     
@@ -101,7 +101,7 @@ const resetTimer = function() {
     setClearInterval();
 };
 
-if (savedDate) {
+if (savedDate) { //savedDate가 있으면 starter함수 실행
   starter(savedDate);  
 } else {
     container.style.display = 'none';

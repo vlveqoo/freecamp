@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#nav{
+    background-color: red;
+    position: fixed;
+    width: 100%
+}
+
+.nav-header{
+    background-color: blueviolet;
+}
+
+.logo{
+    width: 50%;
+}
+
+.nav-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-toggle{
+    position:fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.links-container{
+    background-color: orange;
+    width: 70%;
+    height: 0;
+    overflow: hidden;
+}
+
+.show-links{
+    height: 200px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.links li{
+    margin: 10px;
+}
+
+li{
+    list-style: none;
+    font-size: 25px;
+}
+
+.scroll-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.scroll-link:hover{
+    color: white;
+    text-shadow: 2px 2px blue;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+}
+
+.container p{
+    padding: 20px;
+}
+
+#about, #services, #tours{
+    text-align: center;
+    height: 700px;
+    padding: 20px;
+    border: 10px solid purple;
+}
+
+.section{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    background-color: royalblue;
+    padding: 5px;
+}
+
+.top-link{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+}
