@@ -27,7 +27,3 @@ const makeNumber = function () {
     no5.textContent = lottoArr[4];
     no6.textContent = lottoArr[5];
 }
-
-
-
-//no1.textContent = lottoArr[1]
