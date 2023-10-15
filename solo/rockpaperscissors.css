@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin: 2rem 0rem;
+}
+
+
+.score-board{
+    font-size: 46px;
+    border: 2px solid white;
+    text-align: center;
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px 20px;
+}
+
+.badge{
+    color: white;
+    background-color: orangered;
+    padding: 2px 10px;
+    font-size: 14px;
+}
+
+#user-label{
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label{
+    position: absolute;
+    top: 30px;
+    right: -25px;
+}
+
+.choices{
+    display: flex;
+    margin: 0px 200px;
+}
+
+.choice{
+    margin: 1rem;
+    border: 3px solid white;
+    background-color: black;
+    border-radius: 2.7rem;
+    padding: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.choice:hover{
+    background: white;
+}
+
+#action-message{
+    font-weight: bold;
+    font-size: 20px;
+}
