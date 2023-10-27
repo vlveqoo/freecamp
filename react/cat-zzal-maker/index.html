@@ -26,10 +26,7 @@
   </style>
   <body>
     <div id="app"></div>
-    
-    
-   
-   
+
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -45,12 +42,19 @@
       }
 
       function Favorites (){
+        const CAT1 = "https://cataas.com/cat/HSENVDU4ZMqy7KQ0/says/react";
+        const CAT2 = "https://cataas.com/cat/BxqL2EjFmtxDkAm2/says/inflearn";
+        const CAT3 = "https://cataas.com/cat/18MD6byVC1yKGpXp/says/JavaScript";
+
+        const cats = [CAT1, CAT2];
+        
         return(
           <ul className="favorites">
-            <CatItem img='https://cataas.com/cat/BxqL2EjFmtxDkAm2/says/inflearn'/>
-            <CatItem img='https://cataas.com/cat/18MD6byVC1yKGpXp/says/JavaScript'/>
+            {cats.map(cat => 
+              <CatItem img={cat} key={cat}/>
+            )}
           </ul>
-        )
+        );
       }
 
       function MainCard({img}){
@@ -75,29 +79,44 @@
       const Title = (props) => {
         return(<h1>{props.children}</h1>)
       }
-      const Form = () => {
-        function handleFormSubmit(e){
-          e.preventDefault();
-          console.log('폼전송됨')
-        }
+      const Form = ({handleFormSubmit}) => {
+
+
         return(<form onSubmit={handleFormSubmit}>
                   <input type="text" name="name" placeholder="영어 대사를 입력해주세요" />
                   <button type="submit">생성</button>
                 </form>)
       }
 
-      const app = (
-        <div>
-          <Title>1번째 고양이 가라사대</Title>
-          <Form />
-          <MainCard img='https://cataas.com/cat/HSENVDU4ZMqy7KQ0/says/react'/>
-          <Favorites />
-        </div>
-       
+      const App = () => {
+        const CAT1 = "https://cataas.com/cat/HSENVDU4ZMqy7KQ0/says/react";
+        const CAT2 = "https://cataas.com/cat/BxqL2EjFmtxDkAm2/says/inflearn";
+        const CAT3 = "https://cataas.com/cat/18MD6byVC1yKGpXp/says/JavaScript";
+        const [counter, setCounter] = React.useState(1);
+        // const counter = counterState[0];
+        // const setCounter = counterState[1];
+        const [mainCat, setMainCat] = React.useState(CAT1)
+
+        console.log('카운터', counter);
+
+        function handleFormSubmit(e){
+          e.preventDefault();
+          console.log('폼전송됨')
+          setCounter(counter + 1);
+          setMainCat(CAT3)
+        }
+        return (
+          <div>
+            <Title>{counter}번째 고양이 가라사대</Title>
+            <Form handleFormSubmit={handleFormSubmit}/>
+            <MainCard img={mainCat}/>
+            <Favorites />
+          </div>
         )
+      }
       const 여기다가그려 = document.querySelector("#app");
 
-      ReactDOM.createRoot(여기다가그려).render(app);
+      ReactDOM.createRoot(여기다가그려).render(<App />);
     </script>
   </body>
 </html>
